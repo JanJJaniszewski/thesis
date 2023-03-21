@@ -4,7 +4,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
 
 
-def train_gan_baseline(train_data, parameters):
+def train_gan_baseline_sev(train_data, parameters):
     nums = parameters['numeric_features']
     cats = parameters['categorical_features']
 

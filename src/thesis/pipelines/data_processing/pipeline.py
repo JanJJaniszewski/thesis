@@ -21,8 +21,8 @@ def create_pipeline(**kwargs) -> Pipeline:
                  inputs=['raw_frequency', 'raw_severity'],
                  outputs=['freq_train', 'sev_train', 'all_train', 'freq_test', 'sev_test', 'all_test'],
                  name='common_data_prep'),
-            node(func=train_gan_baseline,
-                 inputs='sev_train',
+            node(func=train_gan_baseline_sev(),
+                 inputs=['sev_train', "params:model_parameters"],
                  outputs='gan_baseline_sev',
                  name='train_gan_baseline'),
         ]
