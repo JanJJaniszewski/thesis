@@ -1,3 +1,15 @@
+def dataprep_baseline():
+    pass
+
+def regression_baseline_freq():
+    pass
+
+def regression_baseline_sev():
+    pass
+
+
+
+
 def regression_baseline(freq0):
     import pandas as pd
     import numpy as np

@@ -17,6 +17,8 @@ logs/**
 !data/**/
 !logs/**/
 
+*.pickle
+
 # also keep all .gitkeep files
 !.gitkeep
 
