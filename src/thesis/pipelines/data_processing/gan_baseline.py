@@ -1,36 +1,8 @@
 # Import necessary libraries
-import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
-import seaborn as sns
-from sklearn.pipeline import make_pipeline
-from sklearn.preprocessing import FunctionTransformer, OneHotEncoder
-from sklearn.preprocessing import StandardScaler, KBinsDiscretizer
-from sklearn.compose import ColumnTransformer
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import PoissonRegressor
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-import scipy.sparse
-import math
-import statsmodels.api as sm
-import statsmodels.formula.api as smf
-import itertools
-import plotly.express as px
-from scipy import stats
-from copy import deepcopy
-from sklearn.model_selection import GroupShuffleSplit
-from sklearn.datasets import fetch_openml
-from sklearn.model_selection import train_test_split
-# Import necessary libraries
-import pandas as pd
 from ctgan import CTGAN
-from sklearn.model_selection import GridSearchCV
-from sklearn.metrics import roc_auc_score, precision_score, recall_score, f1_score
-import matplotlib.pyplot as plt
-import seaborn as sns
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder
+
 
 def train_gan_baseline(train_data, parameters):
     nums = parameters['numeric_features']

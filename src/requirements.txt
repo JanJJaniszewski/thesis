@@ -15,3 +15,6 @@ ctgan
 matplotlib
 pandas
 scikit-learn
+seaborn
+statsmodels
+plotly
