@@ -3,3 +3,38 @@
 #
 # Documentation for this file format can be found in "Parameters"
 # Link: https://kedro.readthedocs.io/en/0.18.4/kedro_project_setup/configuration.html#parameters
+
+model_parameters:
+  numeric_features:
+    - BonusMalus
+    - Density
+    - VehAge
+    - DrivAge
+    - Area
+    - ClaimAmount
+  categorical_features:
+    - VehBrand
+    - VehPower
+    - VehGas
+    - Region
+
+cv_parameters:
+  - epochs:
+      - 100
+      - 200
+      - 300
+  - gen_dim:
+      - (128, 128)
+      - (256, 256)
+      - (512, 512)
+  - dis_dim:
+      - (128, 128)
+      - (256, 256)
+      - (512, 512)
+  - batch_norm:
+      - True
+      - False
+  - batch_size:
+      - 500
+      - 1000
+      - 2000

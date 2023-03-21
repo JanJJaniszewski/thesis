@@ -7,6 +7,14 @@ raw_frequency:
   type: pickle.PickleDataSet
   filepath: data/02_right_format/common_train.pickle
 
+gan_baseline_freq:
+  type: pickle.PickleDataSet
+  filepath: data/07_models/gan_baseline_freq.pickle
+
+#gan_baseline_sev:
+#  type: pickle.PickleDataSet
+#  filepath: data/07_models/gan_baseline_sev.pickle
+
 raw_severity:
   type: pickle.PickleDataSet
   filepath: data/02_right_format/common_test.pickle
